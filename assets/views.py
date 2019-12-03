@@ -177,7 +177,7 @@ def host_add(request):
                 zabbix_host_add(request)
             smg = u'主机%s添加成功!' % ip
             return render_to_response('assets/host_add.html', locals(), context_instance=RequestContext(request))
-
+        emg = u'添加主机记录失败!'
     return render_to_response('assets/host_add.html', locals(), context_instance=RequestContext(request))
 
 
